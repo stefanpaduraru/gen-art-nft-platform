@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": ["dom", "es7", "es2017.object", "es2019.array"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@abis/*": ["abis/*"],
+      "@app/*": ["src/app/*"],
+      "@config/*": ["config/*"],
+      "@common/*": ["src/common/*"],
+      "@src/*": ["src/*"]
+      /*"@repositories/*": ["src/common/repositories/*"],
+      "@services/*": ["src/common/services/*"],
+      */
+    }
+  },
+  "include": ["src/**/*", "config"]
+}

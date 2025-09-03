@@ -1,0 +1,33 @@
+export const emptyWeb3Contract = {
+  randomizerContract: '',
+  adminAddress: '',
+  mintingNFTArtAddress: '',
+  adminPercentage: 0,
+  mintingNFTArtPercentage: 0,
+  nextProjectId: 0,
+};
+
+export const emptyWeb3Project = {
+  name: '',
+  artist: '',
+  artistAddress: '',
+  description: '',
+  website: '',
+  license: '',
+  paused: false,
+  active: false,
+  locked: false,
+  pricePerTokenInWei: 0,
+  iterations: 0,
+  maxIterations: 0,
+  maxTokensPerAddress: 0,
+  baseURI: '',
+  baseIpfsURI: '',
+  useStorage: false,
+  collaboratorAddress: '',
+  collaboratorPercentage: 0,
+  projectFeePercentage: 0,
+  metadata: '',
+  scriptChunksCount: 0,
+  tokens: [],
+};

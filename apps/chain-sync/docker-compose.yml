@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  renderer:
+    image: 'browserless/chrome'
+    container_name: mintoria-renderer
+    ports:
+      - '4000:3000'
+    networks:
+      - mintoria-network
+    environment:
+      - DEFAULT_IGNORE_HTTPS_ERRORS=true
+      - DEFAULT_LAUNCH_ARGS=["--window-size=2400,2400","--ignore-certificate-errors"]
+      - ENABLE_DEBUGGER=false
+      - MAX_CONCURRENT_SESSIONS=5
+      - CONNECTION_TIMEOUT=120000
+      - MAX_QUEUE_LENGTH=100
+
+networks:
+  mintoria-network: {}

@@ -1,0 +1,43 @@
+{
+  "name": "nft-smart-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/stefanpaduraru/nft-smart-contract.git",
+  "author": "stefanpaduraru <stefanpaduraru@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile": "yarn truffle compile",
+    "deploy": "yarn truffle migrate --reset",
+    "coverage": "yarn truffle run coverage",
+    "console": "yarn truffle console",
+    "store:size": "yarn truffle run contract-size --contracts MintoriaStore",
+    "store:flatten": "yarn truffle-flattener src/contracts/Mintoria.store.sol > src/contracts/flat/Mintoria.store.sol",
+    "main:size": "yarn truffle run contract-size --contracts MintoriaMain",
+    "main:flatten": "yarn truffle-flattener src/contracts/Mintoria.main.sol > src/contracts/flat/Mintoria.main.sol",
+    "rand:size": "yarn truffle run contract-size --contracts MintoriaRandomizer",
+    "rand:flatten": "yarn truffle-flattener src/contracts/Mintoria.randomizer.sol > src/contracts/flat/Mintoria.randomizer.sol",
+    "run:ganache": "docker run -p 8545:8545 ganache",
+    "test": "yarn truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bootstrap": "4.3.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "truffle": "^5.4.11",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-flattener": "^1.5.0",
+    "web3": "1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.7.17"
+  }
+}

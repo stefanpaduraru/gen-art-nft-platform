@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>
+      Mintoria <%- galleryTitle %> - Token <%- token.token %>
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script nonce="mtrscript">
+      let tokenData = {
+        hash: "<%- token.hash %>",
+        tokenId: "<%- token.token %>"
+      };
+      <%- token.project?.script %>
+    </script>
+    <style type="text/css" nonce="mtrstyle">
+      html {
+        height: 100%;
+      }
+      body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        padding: 0;
+        margin: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

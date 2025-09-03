@@ -1,0 +1,24 @@
+export type Web3ProjectDetails = {
+  name: string;
+  artist: string;
+  artistAddress: string;
+  description: string;
+  website: string;
+  license: string;
+  iterations: number;
+  maxIterations: number;
+  maxTokensPerAddress: number;
+  baseURI: string;
+  baseIpfsURI: string;
+  metadata: string;
+  scriptChunksCount: number;
+  useStorage: boolean;
+  collaboratorAddress: string;
+  collaboratorPercentage: number;
+  projectFeePercentage: number;
+  tokens: number[];
+  paused: boolean;
+  active: boolean;
+  locked: boolean;
+  pricePerTokenInWei: number;
+};

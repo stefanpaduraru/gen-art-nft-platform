@@ -1,0 +1,4 @@
+export const DEFAULT_TOAST_DURATION = 10000;
+export const MAX_PROJECT_TOKENS = 100000;
+export const DEFAULT_ROYALTY_PERCENTAGE = 5;
+export const DEFAULT_PER_PAGE = 15;

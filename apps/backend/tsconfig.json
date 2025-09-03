@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "lib": ["dom", "es7", "es2017.object", "es2019.array"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@admin/*": ["src/admin/*"],
+      "@config/*": ["config/*"],
+      "@common/*": ["src/common/*"],
+      "@repositories/*": ["src/common/repositories/*"],
+      "@src/*": ["src/*"],
+      "@services/*": ["src/common/services/*"],
+      "@types/*": ["src/common/types/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
